@@ -24,7 +24,7 @@
 ![System](https://i.ibb.co/GPPqQVg/1654244250046.jpg)
 ![Button Interrupt](https://i.ibb.co/jkR0xM9/1654244250016.jpg)
 ![Saved timestamps in shutter.csv](https://i.ibb.co/PG6VCc1/1654244249968.jpg)
-![Video of the system in operation](https://im3.ezgif.com/tmp/ezgif-3-93caae81eb.gif)
+![Video of the system in operation](https://s8.gifyu.com/images/ezgif-3-93caae81eb.gif)
 
 ### FlowChart
 ```mermaid
