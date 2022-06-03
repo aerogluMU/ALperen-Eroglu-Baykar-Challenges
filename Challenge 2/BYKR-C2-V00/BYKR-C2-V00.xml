@@ -1,0 +1,835 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>C:\Users\myste\Desktop\BYKR\Challenge 2\BYKR-C2-V00\BYKR-C2-V00.kicad_sch</source>
+    <date>02/06/2022 00:12:30</date>
+    <tool>Eeschema (6.0.2)</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>BAYKAR CHALLENGE 2</title>
+        <company>ALPEREN EROĞLU</company>
+        <rev/>
+        <date/>
+        <source>BYKR-C2-V00.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C1">
+      <value>0.1u</value>
+      <footprint>LFT_Cap:C_0805_2012Metric</footprint>
+      <libsource lib="LFT_Cap" part="C" description="capacitor 0805 2012 Metric"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="BYKR-C2-V00.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>62898635-41f4-40e7-9d56-434811a93eb9</tstamps>
+    </comp>
+    <comp ref="C2">
+      <value>0.1u</value>
+      <footprint>LFT_Cap:C_0805_2012Metric</footprint>
+      <libsource lib="LFT_Cap" part="C" description="capacitor 0805 2012 Metric"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="BYKR-C2-V00.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5c70fcd7-a4c6-4f06-a387-e148efc1e450</tstamps>
+    </comp>
+    <comp ref="C3">
+      <value>0.1u</value>
+      <footprint>LFT_Cap:C_0805_2012Metric</footprint>
+      <libsource lib="LFT_Cap" part="C" description="capacitor 0805 2012 Metric"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="BYKR-C2-V00.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>65606d28-d173-421e-a362-4ec52663e685</tstamps>
+    </comp>
+    <comp ref="C4">
+      <value>0.1u</value>
+      <footprint>LFT_Cap:C_0805_2012Metric</footprint>
+      <libsource lib="LFT_Cap" part="C" description="capacitor 0805 2012 Metric"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="BYKR-C2-V00.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7476b4e0-b03f-42ae-8dda-045e0806ca17</tstamps>
+    </comp>
+    <comp ref="C5">
+      <value>20p</value>
+      <footprint>LFT_Cap:C_0805_2012Metric</footprint>
+      <libsource lib="LFT_Cap" part="C" description="capacitor 0805 2012 Metric"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="BYKR-C2-V00.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4485e94d-b208-4f03-b2e8-5e9c28b7aeaa</tstamps>
+    </comp>
+    <comp ref="C6">
+      <value>20p</value>
+      <footprint>LFT_Cap:C_0805_2012Metric</footprint>
+      <libsource lib="LFT_Cap" part="C" description="capacitor 0805 2012 Metric"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="BYKR-C2-V00.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8b5fc6d8-da2c-4daf-9c40-6509ad768088</tstamps>
+    </comp>
+    <comp ref="C7">
+      <value>0.1u</value>
+      <footprint>LFT_Cap:C_0805_2012Metric</footprint>
+      <libsource lib="LFT_Cap" part="C" description="capacitor 0805 2012 Metric"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="BYKR-C2-V00.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>71402862-e97e-47d9-8ac2-74259be81a9c</tstamps>
+    </comp>
+    <comp ref="D1">
+      <value>R&amp;W</value>
+      <footprint>LED_SMD:LED_1206_3216Metric</footprint>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="BYKR-C2-V00.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4f37b2e0-12f9-4b2e-972e-3faf177ef9de</tstamps>
+    </comp>
+    <comp ref="D2">
+      <value>PWR</value>
+      <footprint>LED_SMD:LED_1206_3216Metric</footprint>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="BYKR-C2-V00.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1bda2056-fd24-4859-ba37-f29727fe908d</tstamps>
+    </comp>
+    <comp ref="J1">
+      <value>USB_A</value>
+      <footprint>BYKR:USB</footprint>
+      <datasheet> ~</datasheet>
+      <libsource lib="Connector" part="USB_A" description="USB Type A connector"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="BYKR-C2-V00.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>bad069a1-5a80-46e1-a344-37806e7a16f7</tstamps>
+    </comp>
+    <comp ref="J2">
+      <value>Conn_01x09</value>
+      <footprint>LFT_Conn:PinHeader_1x09_P2.54mm_Vertical</footprint>
+      <libsource lib="LFT_Conn" part="Conn_01x09" description="Generic connector, single row, 01x09, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="BYKR-C2-V00.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>745c0230-32d1-4a48-95fe-1a1f463c59dd</tstamps>
+    </comp>
+    <comp ref="J3">
+      <value>Conn_01x01</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical</footprint>
+      <libsource lib="Connector_Generic" part="Conn_01x01" description="Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="BYKR-C2-V00.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5882a91a-e854-41b4-a460-3c92e7c26490</tstamps>
+    </comp>
+    <comp ref="R1">
+      <value>220R</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="BYKR-C2-V00.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1aae024e-5548-46e8-bf85-7e38707e6cce</tstamps>
+    </comp>
+    <comp ref="R2">
+      <value>220R</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="BYKR-C2-V00.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>27dd9717-63e1-4091-935c-e4b8297020ec</tstamps>
+    </comp>
+    <comp ref="R3">
+      <value>10K</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="BYKR-C2-V00.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>359438bf-96f4-4721-b3ce-b28624a00226</tstamps>
+    </comp>
+    <comp ref="R4">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="BYKR-C2-V00.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>32480ff3-5e77-4f5b-952a-ca3eb53360ee</tstamps>
+    </comp>
+    <comp ref="R5">
+      <value>1K</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="BYKR-C2-V00.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2f6b7420-e419-4285-a515-35f29de620e5</tstamps>
+    </comp>
+    <comp ref="R6">
+      <value>330R</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="BYKR-C2-V00.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2efcf2bf-70a4-4991-9a5e-0859fbb66bb5</tstamps>
+    </comp>
+    <comp ref="R7">
+      <value>330R</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="BYKR-C2-V00.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>6041c162-b9a0-4260-a683-f3e6dca5ce7b</tstamps>
+    </comp>
+    <comp ref="R8">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="BYKR-C2-V00.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>26c9530a-06f9-407a-a9cf-8016b5df8155</tstamps>
+    </comp>
+    <comp ref="R9">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="BYKR-C2-V00.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ddc7aa0e-3514-4caa-857b-e6f2cca2cce4</tstamps>
+    </comp>
+    <comp ref="R10">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="BYKR-C2-V00.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9bfb9d91-94ed-4930-bf40-3da65f88cfba</tstamps>
+    </comp>
+    <comp ref="R11">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="BYKR-C2-V00.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>43e09dc0-e08a-4f0b-b1fd-6c124f56e88c</tstamps>
+    </comp>
+    <comp ref="U1">
+      <value>MF-FSMF050X-2</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <libsource lib="BYKR" part="MF-FSMF050X-2" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="BYKR-C2-V00.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a381528c-3cfc-49fb-979b-9e511b544257</tstamps>
+    </comp>
+    <comp ref="U2">
+      <value>SD_CARD</value>
+      <footprint>BYKR:BYKR_SD</footprint>
+      <libsource lib="BYKR" part="SD_CARD" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="BYKR-C2-V00.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>827c5991-d14f-4fe9-a2c1-305b02ce2bc5</tstamps>
+    </comp>
+    <comp ref="U3">
+      <value>GL827L</value>
+      <footprint>OLIMEX_IC-FP:SSOP28</footprint>
+      <libsource lib="BYKR" part="GL827L" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="BYKR-C2-V00.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>219fb47a-a591-478c-9b5a-627f9979d103</tstamps>
+    </comp>
+    <comp ref="U4">
+      <value>74LVC1G18</value>
+      <footprint>Package_TO_SOT_SMD:SOT-363_SC-70-6</footprint>
+      <datasheet>http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf</datasheet>
+      <libsource lib="74xGxx" part="74LVC1G18" description="Single Demultiplexer, Low-Voltage CMOS"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="BYKR-C2-V00.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>fc9a9326-544e-4807-b322-e95552b38cca</tstamps>
+    </comp>
+    <comp ref="U5">
+      <value>74LVC1G18</value>
+      <footprint>Package_TO_SOT_SMD:SOT-363_SC-70-6</footprint>
+      <datasheet>http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf</datasheet>
+      <libsource lib="74xGxx" part="74LVC1G18" description="Single Demultiplexer, Low-Voltage CMOS"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="BYKR-C2-V00.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>533034be-a661-4af8-8eb4-ee956703ff9e</tstamps>
+    </comp>
+    <comp ref="U6">
+      <value>74LVC1G18</value>
+      <footprint>Package_TO_SOT_SMD:SOT-363_SC-70-6</footprint>
+      <datasheet>http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf</datasheet>
+      <libsource lib="74xGxx" part="74LVC1G18" description="Single Demultiplexer, Low-Voltage CMOS"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="BYKR-C2-V00.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>cb8c82b0-d800-4433-9780-351c60913523</tstamps>
+    </comp>
+    <comp ref="U7">
+      <value>74LVC1G18</value>
+      <footprint>Package_TO_SOT_SMD:SOT-363_SC-70-6</footprint>
+      <datasheet>http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf</datasheet>
+      <libsource lib="74xGxx" part="74LVC1G18" description="Single Demultiplexer, Low-Voltage CMOS"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="BYKR-C2-V00.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>77e706b8-0105-4b96-8f4a-987442b88f47</tstamps>
+    </comp>
+    <comp ref="U8">
+      <value>74LVC1G18</value>
+      <footprint>Package_TO_SOT_SMD:SOT-363_SC-70-6</footprint>
+      <datasheet>http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf</datasheet>
+      <libsource lib="74xGxx" part="74LVC1G18" description="Single Demultiplexer, Low-Voltage CMOS"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="BYKR-C2-V00.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a8dc6260-6638-41e7-a774-1c9a93b9c1c2</tstamps>
+    </comp>
+    <comp ref="U9">
+      <value>74LVC1G18</value>
+      <footprint>Package_TO_SOT_SMD:SOT-363_SC-70-6</footprint>
+      <datasheet>http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf</datasheet>
+      <libsource lib="74xGxx" part="74LVC1G18" description="Single Demultiplexer, Low-Voltage CMOS"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="BYKR-C2-V00.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>028a11b2-84f9-48cd-a3c9-81791be4d6e3</tstamps>
+    </comp>
+    <comp ref="U10">
+      <value>74LVC1G18</value>
+      <footprint>Package_TO_SOT_SMD:SOT-363_SC-70-6</footprint>
+      <datasheet>http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf</datasheet>
+      <libsource lib="74xGxx" part="74LVC1G18" description="Single Demultiplexer, Low-Voltage CMOS"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="BYKR-C2-V00.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0975151c-c546-43f1-a37a-5400051482a2</tstamps>
+    </comp>
+    <comp ref="U11">
+      <value>74LVC1G18</value>
+      <footprint>Package_TO_SOT_SMD:SOT-363_SC-70-6</footprint>
+      <datasheet>http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf</datasheet>
+      <libsource lib="74xGxx" part="74LVC1G18" description="Single Demultiplexer, Low-Voltage CMOS"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="BYKR-C2-V00.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>6d514530-dc6b-4f58-aa5f-34f02b8b797d</tstamps>
+    </comp>
+    <comp ref="Y1">
+      <value>12MHz</value>
+      <footprint>LFT_Crys:Crystal_SMD_MicroCrystal_CC8V-T1A-2Pin_2.0x1.2mm_HandSoldering</footprint>
+      <libsource lib="Device" part="Crystal" description="Two pin crystal"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="BYKR-C2-V00.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4cdff039-90ab-4837-b016-a58abf417bf7</tstamps>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="74xGxx" part="74LVC1G18">
+      <description>Single Demultiplexer, Low-Voltage CMOS</description>
+      <docs>http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf</docs>
+      <footprints>
+        <fp>SOT*</fp>
+        <fp>SG-*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">74LVC1G18</field>
+        <field name="Datasheet">http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="input"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="" type="input"/>
+        <pin num="4" name="" type="tri_state"/>
+        <pin num="5" name="VCC" type="power_in"/>
+        <pin num="6" name="" type="tri_state"/>
+      </pins>
+    </libpart>
+    <libpart lib="BYKR" part="GL827L">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">GL827L</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GPIO1" type="bidirectional"/>
+        <pin num="2" name="PMOSO" type="input"/>
+        <pin num="3" name="DVDD" type="input"/>
+        <pin num="4" name="X1" type="output"/>
+        <pin num="5" name="X2" type="output"/>
+        <pin num="6" name="GND" type="power_out"/>
+        <pin num="7" name="AVDD" type="power_in"/>
+        <pin num="8" name="DP" type="output"/>
+        <pin num="9" name="DM" type="output"/>
+        <pin num="10" name="RREF" type="output"/>
+        <pin num="11" name="DVDD" type="input"/>
+        <pin num="12" name="VP5" type="input"/>
+        <pin num="13" name="EXTRSTZ" type="output"/>
+        <pin num="14" name="SD_WP" type="input"/>
+        <pin num="15" name="SD_CDZ" type="input"/>
+        <pin num="16" name="D1" type="input"/>
+        <pin num="17" name="D0" type="input"/>
+        <pin num="18" name="D7" type="input"/>
+        <pin num="19" name="D6" type="input"/>
+        <pin num="20" name="SD_CLK" type="output"/>
+        <pin num="21" name="D5" type="input"/>
+        <pin num="22" name="SD_CMD" type="output"/>
+        <pin num="23" name="D4" type="input"/>
+        <pin num="24" name="D3" type="input"/>
+        <pin num="25" name="D2" type="input"/>
+        <pin num="26" name="MS_INS" type="output"/>
+        <pin num="27" name="GPIO3" type="bidirectional"/>
+        <pin num="28" name="GPIO0" type="bidirectional"/>
+      </pins>
+    </libpart>
+    <libpart lib="BYKR" part="MF-FSMF050X-2">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">MF-FSMF050X-2</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="BYKR" part="SD_CARD">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">SD_CARD</field>
+      </fields>
+      <pins>
+        <pin num="1" name="CD/DAT3" type="input"/>
+        <pin num="2" name="CMD" type="input"/>
+        <pin num="3" name="VSS" type="power_in"/>
+        <pin num="4" name="VDD" type="power_in"/>
+        <pin num="5" name="CLK" type="input"/>
+        <pin num="6" name="VSS" type="power_in"/>
+        <pin num="7" name="DAT0" type="input"/>
+        <pin num="8" name="DAT1" type="input"/>
+        <pin num="9" name="DAT2" type="input"/>
+        <pin num="10" name="CARD_DETECT" type="input"/>
+        <pin num="11" name="WRITE_PROTECT" type="input"/>
+        <pin num="12" name="SHELL1" type="input"/>
+        <pin num="13" name="SHELL2" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="USB_A">
+      <description>USB Type A connector</description>
+      <docs> ~</docs>
+      <footprints>
+        <fp>USB*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">USB_A</field>
+        <field name="Datasheet"> ~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VBUS" type="power_in"/>
+        <pin num="2" name="D-" type="bidirectional"/>
+        <pin num="3" name="D+" type="bidirectional"/>
+        <pin num="4" name="GND" type="power_in"/>
+        <pin num="5" name="Shield" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Generic" part="Conn_01x01">
+      <description>Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x01</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Crystal">
+      <description>Two pin crystal</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Crystal*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Y</field>
+        <field name="Value">Crystal</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="LED">
+      <description>Light emitting diode</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>LED*</fp>
+        <fp>LED_SMD:*</fp>
+        <fp>LED_THT:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R">
+      <description>Resistor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="LFT_Cap" part="C">
+      <description>capacitor 0805 2012 Metric</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+        <field name="Footprint">LFT_Cap:C_0805_2012Metric</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="LFT_Conn" part="Conn_01x09">
+      <description>Generic connector, single row, 01x09, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x09</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+        <pin num="7" name="Pin_7" type="passive"/>
+        <pin num="8" name="Pin_8" type="passive"/>
+        <pin num="9" name="Pin_9" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="74xGxx">
+      <uri>C:\Program Files\KiCad\6.0\share\kicad\symbols\/74xGxx.kicad_sym</uri>
+    </library>
+    <library logical="BYKR">
+      <uri>C:\Users\myste\Desktop\BYKR\Challenge 2\LIBRARY\Symbols\BYKR.kicad_sym</uri>
+    </library>
+    <library logical="Connector">
+      <uri>C:\Program Files\KiCad\6.0\share\kicad\symbols\/Connector.kicad_sym</uri>
+    </library>
+    <library logical="Connector_Generic">
+      <uri>C:\Program Files\KiCad\6.0\share\kicad\symbols\/Connector_Generic.kicad_sym</uri>
+    </library>
+    <library logical="Device">
+      <uri>C:\Program Files\KiCad\6.0\share\kicad\symbols\/Device.kicad_sym</uri>
+    </library>
+    <library logical="LFT_Cap">
+      <uri>C:/Users/myste/Desktop/000 LIBRARY/LFT_Cap.lib</uri>
+    </library>
+    <library logical="LFT_Conn">
+      <uri>C:/Users/myste/Desktop/000 LIBRARY/LFT_Conn.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="+3V3">
+      <node ref="C3" pin="1" pintype="passive"/>
+      <node ref="C4" pin="1" pintype="passive"/>
+      <node ref="R10" pin="2" pintype="passive"/>
+      <node ref="R11" pin="2" pintype="passive"/>
+      <node ref="R3" pin="1" pintype="passive"/>
+      <node ref="R4" pin="1" pintype="passive"/>
+      <node ref="R8" pin="2" pintype="passive"/>
+      <node ref="R9" pin="2" pintype="passive"/>
+      <node ref="U10" pin="5" pinfunction="VCC" pintype="power_in"/>
+      <node ref="U11" pin="5" pinfunction="VCC" pintype="power_in"/>
+      <node ref="U3" pin="11" pinfunction="DVDD" pintype="input"/>
+      <node ref="U3" pin="3" pinfunction="DVDD" pintype="input"/>
+      <node ref="U3" pin="7" pinfunction="AVDD" pintype="power_in"/>
+      <node ref="U4" pin="5" pinfunction="VCC" pintype="power_in"/>
+      <node ref="U5" pin="5" pinfunction="VCC" pintype="power_in"/>
+      <node ref="U6" pin="5" pinfunction="VCC" pintype="power_in"/>
+      <node ref="U7" pin="5" pinfunction="VCC" pintype="power_in"/>
+      <node ref="U8" pin="5" pinfunction="VCC" pintype="power_in"/>
+      <node ref="U9" pin="5" pinfunction="VCC" pintype="power_in"/>
+    </net>
+    <net code="2" name="+5V">
+      <node ref="C1" pin="1" pintype="passive"/>
+      <node ref="C2" pin="1" pintype="passive"/>
+      <node ref="U1" pin="1" pintype="passive"/>
+      <node ref="U3" pin="12" pinfunction="VP5" pintype="input"/>
+    </net>
+    <net code="3" name="CAMERA_CD">
+      <node ref="J2" pin="9" pinfunction="Pin_9" pintype="passive"/>
+      <node ref="U4" pin="3" pintype="input"/>
+    </net>
+    <net code="4" name="CAMERA_CLK">
+      <node ref="J2" pin="5" pinfunction="Pin_5" pintype="passive"/>
+      <node ref="U7" pin="3" pintype="input"/>
+    </net>
+    <net code="5" name="CAMERA_CMD">
+      <node ref="J2" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="U5" pin="3" pintype="input"/>
+    </net>
+    <net code="6" name="CAMERA_D0">
+      <node ref="J2" pin="7" pinfunction="Pin_7" pintype="passive"/>
+      <node ref="U8" pin="3" pintype="input"/>
+    </net>
+    <net code="7" name="CAMERA_D1">
+      <node ref="J2" pin="8" pinfunction="Pin_8" pintype="passive"/>
+      <node ref="U9" pin="3" pintype="input"/>
+    </net>
+    <net code="8" name="CAMERA_D2">
+      <node ref="J2" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="U10" pin="3" pintype="input"/>
+    </net>
+    <net code="9" name="CAMERA_D3">
+      <node ref="J2" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="U11" pin="3" pintype="input"/>
+    </net>
+    <net code="10" name="CAMERA_VCC">
+      <node ref="J2" pin="4" pinfunction="Pin_4" pintype="passive"/>
+      <node ref="U6" pin="3" pintype="input"/>
+    </net>
+    <net code="11" name="DM">
+      <node ref="R2" pin="2" pintype="passive"/>
+      <node ref="U3" pin="9" pinfunction="DM" pintype="output"/>
+    </net>
+    <net code="12" name="DP">
+      <node ref="R1" pin="2" pintype="passive"/>
+      <node ref="U3" pin="8" pinfunction="DP" pintype="output"/>
+    </net>
+    <net code="13" name="GND">
+      <node ref="C1" pin="2" pintype="passive"/>
+      <node ref="C2" pin="2" pintype="passive"/>
+      <node ref="C3" pin="2" pintype="passive"/>
+      <node ref="C4" pin="2" pintype="passive"/>
+      <node ref="C5" pin="2" pintype="passive"/>
+      <node ref="C6" pin="2" pintype="passive"/>
+      <node ref="C7" pin="2" pintype="passive"/>
+      <node ref="D1" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D2" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="J1" pin="4" pinfunction="GND" pintype="power_in"/>
+      <node ref="J1" pin="5" pinfunction="Shield" pintype="passive"/>
+      <node ref="J2" pin="6" pinfunction="Pin_6" pintype="passive"/>
+      <node ref="R5" pin="1" pintype="passive"/>
+      <node ref="U10" pin="2" pinfunction="GND" pintype="power_in"/>
+      <node ref="U11" pin="2" pinfunction="GND" pintype="power_in"/>
+      <node ref="U2" pin="11" pinfunction="WRITE_PROTECT" pintype="input"/>
+      <node ref="U2" pin="12" pinfunction="SHELL1" pintype="input"/>
+      <node ref="U2" pin="13" pinfunction="SHELL2" pintype="input"/>
+      <node ref="U2" pin="3" pinfunction="VSS" pintype="power_in"/>
+      <node ref="U2" pin="6" pinfunction="VSS" pintype="power_in"/>
+      <node ref="U3" pin="6" pinfunction="GND" pintype="power_out"/>
+      <node ref="U4" pin="2" pinfunction="GND" pintype="power_in"/>
+      <node ref="U5" pin="2" pinfunction="GND" pintype="power_in"/>
+      <node ref="U6" pin="2" pinfunction="GND" pintype="power_in"/>
+      <node ref="U7" pin="2" pinfunction="GND" pintype="power_in"/>
+      <node ref="U8" pin="2" pinfunction="GND" pintype="power_in"/>
+      <node ref="U9" pin="2" pinfunction="GND" pintype="power_in"/>
+    </net>
+    <net code="14" name="MCU_S">
+      <node ref="J3" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="U10" pin="1" pintype="input"/>
+      <node ref="U11" pin="1" pintype="input"/>
+      <node ref="U4" pin="1" pintype="input"/>
+      <node ref="U5" pin="1" pintype="input"/>
+      <node ref="U6" pin="1" pintype="input"/>
+      <node ref="U7" pin="1" pintype="input"/>
+      <node ref="U8" pin="1" pintype="input"/>
+      <node ref="U9" pin="1" pintype="input"/>
+    </net>
+    <net code="15" name="Net-(C5-Pad1)">
+      <node ref="C5" pin="1" pintype="passive"/>
+      <node ref="U3" pin="4" pinfunction="X1" pintype="output"/>
+      <node ref="Y1" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="16" name="Net-(C6-Pad1)">
+      <node ref="C6" pin="1" pintype="passive"/>
+      <node ref="U3" pin="5" pinfunction="X2" pintype="output"/>
+      <node ref="Y1" pin="2" pinfunction="2" pintype="passive"/>
+    </net>
+    <net code="17" name="Net-(C7-Pad1)">
+      <node ref="C7" pin="1" pintype="passive"/>
+      <node ref="R3" pin="2" pintype="passive"/>
+      <node ref="U3" pin="13" pinfunction="EXTRSTZ" pintype="output"/>
+    </net>
+    <net code="18" name="Net-(D1-Pad2)">
+      <node ref="D1" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="R6" pin="2" pintype="passive"/>
+    </net>
+    <net code="19" name="Net-(D2-Pad2)">
+      <node ref="D2" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="R7" pin="2" pintype="passive"/>
+    </net>
+    <net code="20" name="Net-(J1-Pad1)">
+      <node ref="J1" pin="1" pinfunction="VBUS" pintype="power_in"/>
+      <node ref="U1" pin="2" pintype="passive"/>
+    </net>
+    <net code="21" name="Net-(J1-Pad2)">
+      <node ref="J1" pin="2" pinfunction="D-" pintype="bidirectional"/>
+      <node ref="R2" pin="1" pintype="passive"/>
+    </net>
+    <net code="22" name="Net-(J1-Pad3)">
+      <node ref="J1" pin="3" pinfunction="D+" pintype="bidirectional"/>
+      <node ref="R1" pin="1" pintype="passive"/>
+    </net>
+    <net code="23" name="Net-(R4-Pad2)">
+      <node ref="R4" pin="2" pintype="passive"/>
+      <node ref="U3" pin="1" pinfunction="GPIO1" pintype="bidirectional"/>
+    </net>
+    <net code="24" name="Net-(R5-Pad2)">
+      <node ref="R5" pin="2" pintype="passive"/>
+      <node ref="U3" pin="10" pinfunction="RREF" pintype="output"/>
+    </net>
+    <net code="25" name="Net-(R6-Pad1)">
+      <node ref="R6" pin="1" pintype="passive"/>
+      <node ref="U3" pin="28" pinfunction="GPIO0" pintype="bidirectional"/>
+    </net>
+    <net code="26" name="Net-(R7-Pad1)">
+      <node ref="R7" pin="1" pintype="passive"/>
+      <node ref="U3" pin="27" pinfunction="GPIO3" pintype="bidirectional"/>
+    </net>
+    <net code="27" name="SD_CD">
+      <node ref="U2" pin="10" pinfunction="CARD_DETECT" pintype="input"/>
+      <node ref="U4" pin="6" pintype="tri_state"/>
+    </net>
+    <net code="28" name="SD_CLK">
+      <node ref="U2" pin="5" pinfunction="CLK" pintype="input"/>
+      <node ref="U7" pin="6" pintype="tri_state"/>
+    </net>
+    <net code="29" name="SD_CMD">
+      <node ref="U2" pin="2" pinfunction="CMD" pintype="input"/>
+      <node ref="U5" pin="6" pintype="tri_state"/>
+    </net>
+    <net code="30" name="SD_D0">
+      <node ref="U2" pin="7" pinfunction="DAT0" pintype="input"/>
+      <node ref="U8" pin="6" pintype="tri_state"/>
+    </net>
+    <net code="31" name="SD_D1">
+      <node ref="U2" pin="8" pinfunction="DAT1" pintype="input"/>
+      <node ref="U9" pin="6" pintype="tri_state"/>
+    </net>
+    <net code="32" name="SD_D2">
+      <node ref="U10" pin="6" pintype="tri_state"/>
+      <node ref="U2" pin="9" pinfunction="DAT2" pintype="input"/>
+    </net>
+    <net code="33" name="SD_D3">
+      <node ref="U11" pin="6" pintype="tri_state"/>
+      <node ref="U2" pin="1" pinfunction="CD/DAT3" pintype="input"/>
+    </net>
+    <net code="34" name="SD_VCC">
+      <node ref="U2" pin="4" pinfunction="VDD" pintype="power_in"/>
+      <node ref="U6" pin="6" pintype="tri_state"/>
+    </net>
+    <net code="35" name="USB_CD">
+      <node ref="U3" pin="15" pinfunction="SD_CDZ" pintype="input"/>
+      <node ref="U4" pin="4" pintype="tri_state"/>
+    </net>
+    <net code="36" name="USB_CLK">
+      <node ref="U3" pin="20" pinfunction="SD_CLK" pintype="output"/>
+      <node ref="U7" pin="4" pintype="tri_state"/>
+    </net>
+    <net code="37" name="USB_CMD">
+      <node ref="U3" pin="22" pinfunction="SD_CMD" pintype="output"/>
+      <node ref="U5" pin="4" pintype="tri_state"/>
+    </net>
+    <net code="38" name="USB_D0">
+      <node ref="R10" pin="1" pintype="passive"/>
+      <node ref="U3" pin="17" pinfunction="D0" pintype="input"/>
+      <node ref="U8" pin="4" pintype="tri_state"/>
+    </net>
+    <net code="39" name="USB_D1">
+      <node ref="R11" pin="1" pintype="passive"/>
+      <node ref="U3" pin="16" pinfunction="D1" pintype="input"/>
+      <node ref="U9" pin="4" pintype="tri_state"/>
+    </net>
+    <net code="40" name="USB_D2">
+      <node ref="R8" pin="1" pintype="passive"/>
+      <node ref="U10" pin="4" pintype="tri_state"/>
+      <node ref="U3" pin="25" pinfunction="D2" pintype="input"/>
+    </net>
+    <net code="41" name="USB_D3">
+      <node ref="R9" pin="1" pintype="passive"/>
+      <node ref="U11" pin="4" pintype="tri_state"/>
+      <node ref="U3" pin="24" pinfunction="D3" pintype="input"/>
+    </net>
+    <net code="42" name="USB_VCC">
+      <node ref="U3" pin="2" pinfunction="PMOSO" pintype="input"/>
+      <node ref="U6" pin="4" pintype="tri_state"/>
+    </net>
+    <net code="43" name="unconnected-(U3-Pad14)">
+      <node ref="U3" pin="14" pinfunction="SD_WP" pintype="input+no_connect"/>
+    </net>
+    <net code="44" name="unconnected-(U3-Pad18)">
+      <node ref="U3" pin="18" pinfunction="D7" pintype="input+no_connect"/>
+    </net>
+    <net code="45" name="unconnected-(U3-Pad19)">
+      <node ref="U3" pin="19" pinfunction="D6" pintype="input+no_connect"/>
+    </net>
+    <net code="46" name="unconnected-(U3-Pad21)">
+      <node ref="U3" pin="21" pinfunction="D5" pintype="input+no_connect"/>
+    </net>
+    <net code="47" name="unconnected-(U3-Pad23)">
+      <node ref="U3" pin="23" pinfunction="D4" pintype="input+no_connect"/>
+    </net>
+    <net code="48" name="unconnected-(U3-Pad26)">
+      <node ref="U3" pin="26" pinfunction="MS_INS" pintype="output+no_connect"/>
+    </net>
+  </nets>
+</export>

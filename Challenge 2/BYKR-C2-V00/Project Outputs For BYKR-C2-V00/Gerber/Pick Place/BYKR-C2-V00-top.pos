@@ -1,0 +1,41 @@
+### Module positions - created on Thu Jun  2 00:10:11 2022 ###
+### Printed by Pcbnew version (6.0.2)
+## Unit = mm, Angle = deg.
+## Side : top
+# Ref     Val            Package                                                              PosX       PosY       Rot  Side
+C1        0.1u           C_0805_2012Metric                                                122.0375  -102.9500    0.0000  top
+C2        0.1u           C_0805_2012Metric                                                122.0500  -105.0500    0.0000  top
+C3        0.1u           C_0805_2012Metric                                                122.0500  -107.1500    0.0000  top
+C4        0.1u           C_0805_2012Metric                                                122.0375  -109.2500    0.0000  top
+C5        20p            C_0805_2012Metric                                                133.3500   -96.4500    0.0000  top
+C6        20p            C_0805_2012Metric                                                133.3500  -102.8500    0.0000  top
+C7        0.1u           C_0805_2012Metric                                                134.4500  -109.3500   90.0000  top
+D1        R&W            LED_1206_3216Metric                                              154.1500   -94.6500  -90.0000  top
+D2        PWR            LED_1206_3216Metric                                              156.8500   -94.6500  -90.0000  top
+J1        USB_A          USB                                                              127.5500  -133.1688   90.0000  top
+J2        Conn_01x09     PinHeader_1x09_P2.54mm_Vertical                                  175.7626   -95.2000    0.0000  top
+J3        Conn_01x01     PinHeader_1x01_P2.54mm_Vertical                                  175.7500   -87.3500    0.0000  top
+R1        220R           R_0805_2012Metric                                                126.4500  -117.3500   90.0000  top
+R2        220R           R_0805_2012Metric                                                128.7500  -117.3625   90.0000  top
+R3        10K            R_0805_2012Metric                                                132.3500  -109.3500  -90.0000  top
+R4        10k            R_0805_2012Metric                                                139.4500   -97.0500  -90.0000  top
+R5        1K             R_0805_2012Metric                                                135.1500  -106.4500    0.0000  top
+R6        330R           R_0805_2012Metric                                                152.2500   -98.7500    0.0000  top
+R7        330R           R_0805_2012Metric                                                152.2500  -100.8500    0.0000  top
+R8        10k            R_0805_2012Metric                                                155.8500  -103.9500   90.0000  top
+R9        10k            R_0805_2012Metric                                                157.9500  -103.9500   90.0000  top
+R10       10k            R_0805_2012Metric                                                160.0500  -103.9500   90.0000  top
+R11       10k            R_0805_2012Metric                                                162.1500  -103.9500   90.0000  top
+U1        MF-FSMF050X-2  R_0805_2012Metric                                                131.0500  -117.3500  -90.0000  top
+U2        SD_CARD        BYKR_SD                                                          133.3500   -74.7500   90.0000  top
+U3        GL827L         SSOP28                                                           143.4500  -104.8500  -90.0000  top
+U4        74LVC1G18      SOT-363_SC-70-6                                                  168.5500  -115.8500  180.0000  top
+U5        74LVC1G18      SOT-363_SC-70-6                                                  168.5500  -100.8500  180.0000  top
+U6        74LVC1G18      SOT-363_SC-70-6                                                  168.5500  -103.8500  180.0000  top
+U7        74LVC1G18      SOT-363_SC-70-6                                                  168.5500  -106.8500  180.0000  top
+U8        74LVC1G18      SOT-363_SC-70-6                                                  168.5500  -109.8500  180.0000  top
+U9        74LVC1G18      SOT-363_SC-70-6                                                  168.5500  -112.8500  180.0000  top
+U10       74LVC1G18      SOT-363_SC-70-6                                                  168.5500   -94.8500  180.0000  top
+U11       74LVC1G18      SOT-363_SC-70-6                                                  168.5500   -97.8500  180.0000  top
+Y1        12MHz          Crystal_SMD_MicroCrystal_CC8V-T1A-2Pin_2.0x1.2mm_HandSoldering   132.6500   -99.6500  -90.0000  top
+## End
