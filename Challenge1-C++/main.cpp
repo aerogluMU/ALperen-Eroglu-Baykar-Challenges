@@ -7,6 +7,7 @@
 #include <sys/time.h>
 #include <fstream>
 #include <json-c/json.h>
+#include <bcm2835.h>
  
 using namespace std;
 
@@ -17,6 +18,8 @@ unsigned int millisecond = 1000;
 long int *ts_buffer;
 int count = 0;
 uint8_t it_occured = 0;
+uint8_t i2c_flag = 0;
+char dataTx[6] = "hello";
 
 int LED1_Pin = 7;
 int LED2_Pin = 0;
@@ -125,10 +128,55 @@ void thread_shutter_record(uint8_t shutter_period) {
             shutter_File.close();
             count=0;
             it_occured=0;
+            i2c_flag = 1;
             memset(ts_buffer,'\0',30);
          }
       }
       delay(shutter_period * millisecond);
+   }
+}
+
+/*********************************************************************
+ * @fn      		  - thread_i2c
+ *
+ * @brief             - This function sends "hello" message from 
+ *                      i2c line to STM32F407VG card if i2c_flag is set
+ *                      and wakes Receive interrupt on STM32F407VG 
+ *                      card. Then it takes 4 bytes of data from 
+ *                      the STM32F407VG card and collects this data and 
+ *                      prints the counter number.
+ *
+ * @param[in]         - none
+ *
+ * @return            - none
+ *
+ * @Note              - none
+ */
+
+void thread_i2c(void) {
+   if (!bcm2835_init())
+   {
+      printf("bcm2835_init failed.\n");
+   }
+
+   if (!bcm2835_i2c_begin())
+   {
+      printf("bcm2835_i2c_begin failed.\n");
+   }
+   bcm2835_i2c_setSlaveAddress(0x00);
+   bcm2835_i2c_setClockDivider(BCM2835_I2C_CLOCK_DIVIDER_150);
+   bcm2835_i2c_set_baudrate(400000);
+   char testrx[4];
+   while(1){
+      if(i2c_flag == 1){
+         bcm2835_i2c_write(dataTx,6);
+         bcm2835_i2c_read((char*)testrx,4);
+         uint32_t sum = testrx[0]+testrx[1]+testrx[2]+testrx[3];
+         printf("Rx Data: %d\n",sum);
+         memset(&testrx,'\0',4);
+         i2c_flag = 0;
+      }
+
    }
 }
 
@@ -165,6 +213,8 @@ int main () {
    }
    thread t1(thread_shutter_pulse,shutter_period_time);
    thread t2(thread_shutter_record,shutter_period_time);
+   thread t3(thread_i2c);
    t1.join();
    t2.join();
+   t3.join();
 }
