@@ -44,117 +44,64 @@
 ### FlowChart of Raspberry Pi 3B+
 ```mermaid
 graph  TD
+    A[System Start]  -->B[Initialization]
+    B  -->  C(Read shutter_period_time value in config.json)
+    C  -->  T1[thread_shutter_pulse begin]
+    C  -->  T2[thread_shutter_record begin]
+    C  -->  INT[button_callback begin]
+    C  -->  T3[thread_i2c begin]
 
-A[System Start]  -->B[Initialization]
+    T1  -->  T11(Open LED1 and LED2)
+    T11  -->  T1D1(Wait seconds at shutter_period_time)
+    T1D1  -->  T12(Close LED1 and LED2)
+    T12  -->  T1D2(Wait seconds at shutter_period_time)
+    T1D2  -->  T11
 
-B  -->  C(Read shutter_period_time value in config.json)
+    T2  -->  T2INT{Is it_occured value set?}
+    T2INT  -->  |Yes| T2SAVE(Save values from ts_buffer array to shutter.csv)
+    T2SAVE  -->  T2CLEAR(Clear it_occured flag and ts_buffer array)
+    T2CLEAR  -->  T2SET(Set i2c_flag)
+    T2SET  -->  T2D1(Wait seconds at shutter_period_time)
+    T2D1  -->  T2INT
+    T2INT  -->  |No| T2D2(Wait seconds at shutter_period_time)
+    T2D2  -->  T2INT
 
-C  -->  T1[thread_shutter_pulse begin]
+    INT  -->  INT_ISPRESSED{Is button pressed?}
+    INT_ISPRESSED  -->  |Yes| INT_ISPRESSED_Y(Save current timestamp value to ts_buffer array and print it with cout)
+    INT_ISPRESSED_Y  -->  INT_ISPRESSED_1(set it_occured flag)
+    INT_ISPRESSED_1  -->  INT_ISPRESSED
+    INT_ISPRESSED  -->  |No| INT_ISPRESSED
 
-C  -->  T2[thread_shutter_record begin]
-
-C  -->  INT[button_callback begin]
-
-C  -->  T3[thread_i2c begin]
-
-  
-
-T1  -->  T11(Open LED1 and LED2)
-
-T11  -->  T1D1(Wait seconds at shutter_period_time)
-
-T1D1  -->  T12(Close LED1 and LED2)
-
-T12  -->  T1D2(Wait seconds at shutter_period_time)
-
-T1D2  -->  T11
-
-  
-
-T2  -->  T2INT{Is it_occured value set?}
-
-T2INT  -->  |Yes|  T2SAVE(Save values from ts_buffer array to shutter.csv)
-
-T2SAVE  -->  T2CLEAR(Clear it_occured flag and ts_buffer array)
-
-T2CLEAR  -->  T2SET(Set i2c_flag)
-
-T2SET  -->  T2D1(Wait seconds at shutter_period_time)
-
-T2D1  -->  T2INT
-
-T2INT  -->  |No|  T2D2(Wait seconds at shutter_period_time)
-
-T2D2  -->  T2INT
-
-  
-
-INT  -->  INT_ISPRESSED{Is button pressed?}
-
-INT_ISPRESSED  -->  |Yes|  INT_ISPRESSED_Y(Save current timestamp value to ts_buffer array and print it with cout)
-
-INT_ISPRESSED_Y  -->  INT_ISPRESSED_1(set it_occured flag)
-
-INT_ISPRESSED_1  -->  INT_ISPRESSED
-
-INT_ISPRESSED  -->  |No|  INT_ISPRESSED
-
-  
-
-T3  -->  T3_INT{Is i2c_flag set?}
-
-T3_INT  -->  |Yes|  T3_STM(Wake Receive Interrupt on STM32F407VG board)
-
-T3_STM  -->  T3_CNT(Collect the incoming data and print the counter value)
-
-T3_CNT  -->  T3_RST(Reset i2c_flag)
-
-T3_RST  -->  T3_INT
-
-T3_INT  -->  |No|  T3_INT
-    
+    T3  -->  T3_INT{Is i2c_flag set?}
+    T3_INT  -->  |Yes| T3_STM(Wake Receive Interrupt on STM32F407VG board)
+    T3_STM  -->  T3_CNT(Collect the incoming data and print the counter value)
+    T3_CNT  -->  T3_RST(Reset i2c_flag)
+    T3_RST  -->  T3_INT
+    T3_INT  -->  |No| T3_INT
 ```
 
 ### FlowChart of STM32F407VG Disco
 
 ```mermaid
-graph  TD
-
-A[System Start]  -->B[Initialization]
-
-B  -->  C(Set 0 all bytes of i2c_veri)
-
-C  -->  D{Is receive interrupt occured?}
-
-D  -->  |Yes|  E(Send 4 byte i2c_veri)
-
-E  -->  F{Is first byte of i2c_veri less then 255?}
-
-F  -->  |Yes|  FBI(Increase first byte of i2c_veri)
-
-FBI  -->  D
-
-F  -->  |No|  CSB{Is first byte of i2c_veri equal 255 and second byte of i2c_veri less then 255?}
-
-CSB  -->  |Yes|  SBI(Increase second byte of i2c_veri)
-
-SBI  -->  D
-
-CSB  -->  |No|  CTB{Is second byte of i2c_veri equal 255 and third byte of i2c_veri less then 255?}
-
-CTB  -->  |Yes|  TBI(Increase third byte of i2c_veri)
-
-TBI  -->  D
-
-CTB  -->  |No|  CFB{Is third byte of i2c_veri equal 255 and fourth byte of i2c_veri less then 255?}
-
-CFB  -->  |Yes|  FBI(Increase fourth byte of i2c_veri)
-
-FBI  -->  D
-
-CFB  -->  |No|  RST(Reset i2c_veri array)
-
-RST  -->  D
+graph TD
+    A[System Start] -->B[Initialization]
+    B --> C(Set 0 all bytes of i2c_veri)
+    C --> D{Is receive interrupt occured?}
+    D --> |Yes| E(Send 4 byte i2c_veri)
+    E --> F{Is first byte of i2c_veri less then 255?}
+    F --> |Yes| FBI(Increase first byte of i2c_veri)
+    FBI --> D
+    F --> |No| CSB{Is first byte of i2c_veri equal 255 and second byte of i2c_veri less then 255?}
+    CSB --> |Yes| SBI(Increase second byte of i2c_veri)
+    SBI --> D
+    CSB --> |No| CTB{Is second byte of i2c_veri equal 255 and third byte of i2c_veri less then 255?}
+    CTB --> |Yes| TBI(Increase third byte of i2c_veri)
+    TBI --> D
+    CTB --> |No| CFB{Is third byte of i2c_veri equal 255 and fourth byte of i2c_veri less then 255?}
+    CFB --> |Yes| FBI(Increase fourth byte of i2c_veri)
+    FBI --> D
+    CFB --> |No| RST(Reset i2c_veri array)
+    RST --> D
 ```
 
 ## Challenge 2
