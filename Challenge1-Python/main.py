@@ -41,6 +41,7 @@ def thread_shutter_pulse(shutter_period):
 
 def thread_shutter_record(shutter_period):
     global it_occured
+    global i2c_flag
     while(1):
         if(it_occured == 1):
             global ts_buffer
@@ -52,20 +53,29 @@ def thread_shutter_record(shutter_period):
             ts_buffer=[None] * 100
             count=0
             it_occured=0
+            i2c_flag=1
         time.sleep(shutter_period)
 
 def thread_i2c_read(shutter_period):
-    addr = 0x61
-    bus = SMBus(1)
-    time.sleep(1)
+    global i2c_flag
+    dataTx = "Hello"
+    addr = 0x00
+    bus = smbus.SMBus(1)
+    time.sleep(shutter_period)
     while(1):
-        data = bus.read_byte_data(addr,3)
-        print("I2C: ",data)
-        time.sleep(shutter_period)
+        if(i2c_flag==1):
+            bus.write_byte_data(addr,5,dataTx)
+            data = bus.read_byte_data(addr,4)
+            sum=0
+            for(int i=0;i<4;i++):
+                sum+=data[i]
+            print("I2C Data: ",sum)
+            i2c_flag=0
 
 ts_buffer= [None] * 100
 count=0
 it_occured = 0
+i2c_flag = 0
 
 GPIO_Init()
 shutter_period_time = Read_JSON()
