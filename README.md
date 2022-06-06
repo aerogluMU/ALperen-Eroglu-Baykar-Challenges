@@ -87,20 +87,25 @@ graph TD
     A[System Start] -->B[Initialization]
     B --> C(Set 0 all bytes of i2c_veri)
     C --> D{Is receive interrupt occured?}
+    D --> |No| D
     D --> |Yes| E(Send 4 byte i2c_veri)
-    E --> F{Is first byte of i2c_veri less then 255?}
-    F --> |Yes| FBI(Increase first byte of i2c_veri)
+    
+    E --> CFB{Is first byte of i2c_veri less then 255?}
+    CFB --> |Yes| FBI(Increase first byte of i2c_veri)
     FBI --> D
-    F --> |No| CSB{Is first byte of i2c_veri equal 255 and second byte of i2c_veri less then 255?}
+    CFB --> |No| CSB{Is first byte of i2c_veri equal 255 and second byte of i2c_veri less then 255?}
+    
     CSB --> |Yes| SBI(Increase second byte of i2c_veri)
     SBI --> D
     CSB --> |No| CTB{Is second byte of i2c_veri equal 255 and third byte of i2c_veri less then 255?}
+    
     CTB --> |Yes| TBI(Increase third byte of i2c_veri)
     TBI --> D
     CTB --> |No| CFB{Is third byte of i2c_veri equal 255 and fourth byte of i2c_veri less then 255?}
-    CFB --> |Yes| FBI(Increase fourth byte of i2c_veri)
-    FBI --> D
-    CFB --> |No| RST(Reset i2c_veri array)
+    
+    CFFB --> |Yes| FFBI(Increase fourth byte of i2c_veri)
+    FFBI --> D
+    CFFB --> |No| RST(Reset i2c_veri array)
     RST --> D
 ```
 
