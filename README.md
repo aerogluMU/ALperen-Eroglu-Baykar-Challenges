@@ -74,7 +74,7 @@ graph  TD
 
     T3  -->  T3_INT{Is i2c_flag set?}
     T3_INT  -->  |Yes| T3_STM(Wake Receive Interrupt on STM32F407VG board)
-    T3_STM  -->  T3_CNT(Collect the incoming data and print the counter value)
+    T3_STM  -->  T3_CNT(Sum the incoming data bytes and print the sum which is the counter value)
     T3_CNT  -->  T3_RST(Reset i2c_flag)
     T3_RST  -->  T3_INT
     T3_INT  -->  |No| T3_INT
