@@ -101,7 +101,7 @@ graph TD
     
     CTB --> |Yes| TBI(Increase third byte of i2c_veri)
     TBI --> D
-    CTB --> |No| CFB{Is third byte of i2c_veri equal 255 and fourth byte of i2c_veri less then 255?}
+    CTB --> |No| CFFB{Is third byte of i2c_veri equal 255 and fourth byte of i2c_veri less then 255?}
     
     CFFB --> |Yes| FFBI(Increase fourth byte of i2c_veri)
     FFBI --> D
